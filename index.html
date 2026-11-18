@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clipping Factory</title>
+<meta name="description" content="Clipping Factory is a small internal tool that uploads approved short comedy clips to its owner's own YouTube channels using YouTube API Services.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header>
+  <a class="brand" href="./">Clipping Factory</a>
+  <nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+</header>
+
+<h1>Clipping Factory</h1>
+<p><span class="badge">This app uses <b>YouTube API Services</b></span></p>
+
+<p>Clipping Factory is a small, privately operated tool that helps one owner run their own short-form
+comedy channels. It turns long-form videos that the owner is authorised to clip (through paid clipping
+campaigns) into short vertical clips, and uploads clips that the owner has personally approved to the
+owner's own YouTube channels as Shorts.</p>
+
+<h2>How it uses YouTube</h2>
+<ul>
+  <li>The owner signs in with Google's official OAuth sign-in and grants access to their own channels.
+      The app never asks for, sees or stores a password.</li>
+  <li>It uses only two YouTube Data API operations: <code>videos.insert</code> (upload a clip the owner approved)
+      and <code>channels.list</code> with <code>mine=true</code> (confirm which channel was signed in).</li>
+  <li>Every upload is approved by a person first. Uploads are limited to a few per channel per day.</li>
+  <li>It does not read, edit or delete existing videos, comments or other users' data, and it never deletes anything.</li>
+</ul>
+
+<h2>Channels</h2>
+<p>The app uploads only to the owner's own channels: <b>@podpunchlinesdaily</b> and <b>@standupsnippetsdaily</b>.
+It is not offered to other users.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:eidth.clipping.factory01@gmail.com">eidth.clipping.factory01@gmail.com</a></p>
+
+<footer>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms of Service</a>
+  <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>
+  <a href="https://policies.google.com/privacy">Google Privacy Policy</a>
+</footer>
+</main>
+</body>
+</html>
