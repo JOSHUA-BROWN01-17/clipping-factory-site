@@ -26,8 +26,10 @@ owner's own YouTube channels as Shorts.</p>
 <ul>
   <li>The owner signs in with Google's official OAuth sign-in and grants access to their own channels.
       The app never asks for, sees or stores a password.</li>
-  <li>It uses only two YouTube Data API operations: <code>videos.insert</code> (upload a clip the owner approved)
-      and <code>channels.list</code> with <code>mine=true</code> (confirm which channel was signed in).</li>
+  <li>It uses only three YouTube Data API operations: <code>videos.insert</code> (upload a clip the owner approved),
+      <code>channels.list</code> with <code>mine=true</code> (confirm which channel was signed in, and read its
+      subscriber count) and <code>videos.list</code> (read the view, like and comment counts of the owner's own
+      posted clips, so the owner can see how they perform).</li>
   <li>Every upload is approved by a person first. Uploads are limited to a few per channel per day.</li>
   <li>Separately, it can read (never send, change or delete) the owner's own business inbox with Gmail's
       read-only permission, to catch platform warnings quickly. See the <a href="privacy.html">Privacy Policy</a>.</li>

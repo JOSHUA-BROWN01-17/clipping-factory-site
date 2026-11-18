@@ -31,7 +31,8 @@ handling of your data is described in the <a href="https://policies.google.com/p
 <p>When the owner connects a channel through Google's official OAuth sign-in, the app asks for these permissions only:</p>
 <ul>
   <li><code>youtube.upload</code>: to upload videos the owner has approved to that channel.</li>
-  <li><code>youtube.readonly</code>: to read the connected channel's ID and handle, so the app can confirm it is the intended channel.</li>
+  <li><code>youtube.readonly</code>: to read the connected channel's ID, handle and subscriber count (to confirm it is
+      the intended channel), and the public view, like and comment counts of the owner's own posted clips.</li>
 </ul>
 <p>The app does not read or use any other YouTube data: not your watch history, subscriptions, comments,
 other users' data, or analytics.</p>
@@ -58,7 +59,9 @@ Policy</a>, including the Limited Use requirements.</p>
 <ul>
   <li><b>OAuth tokens</b> (access and refresh tokens) for the connected channel, <b>encrypted</b> and stored
       only on the owner's own computer. Passwords are never asked for, seen or stored.</li>
-  <li>The connected <b>channel ID and handle</b>.</li>
+  <li>The connected <b>channel ID and handle</b>, and its subscriber count once a day.</li>
+  <li>For each of the owner's posted clips: its <b>view, like and comment counts</b>, saved once a day so the
+      owner can see trends.</li>
   <li>For each clip the app uploads: the resulting <b>video ID, video URL and upload time</b>, so the owner can
       keep track of their own posts.</li>
   <li>For each email in the connected business inbox: <b>sender, subject, date, Gmail's preview snippet and a
